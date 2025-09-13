@@ -151,4 +151,214 @@ Custom behavior for arithmetic, comparison, assignment
 
 # Algorithms
 # Program 1
-Objective : 
+Objective : to illustrate the concept of constructor overloading in C++
+
+Steps 
+
+    1. Start
+    
+    2. Define a class Construct with three overloaded constructors:
+    
+    Constructor with two int parameters
+    
+    Constructor with two string parameters
+    
+    Constructor with two float parameters
+    
+    3. Inside each constructor, display the values passed:
+    
+    For int constructor: print both integers
+    
+    For string constructor: print both strings
+    
+    For float constructor: print both float values
+    
+    4. In the main() function:
+    
+    Create an object ct1 using integer arguments → invokes Construct(int, int)
+    
+    Create an object ct2 using string arguments → invokes Construct(string, string)
+    
+    Create an object ct3 using float arguments → invokes Construct(float, float)
+    
+    5. Each constructor executes automatically when its corresponding object is created, printing the appropriate output.
+    
+    6. End
+
+# Program 2
+Objective : to illustrate the concept of constructor overloading in C++
+
+Steps 
+
+    1.Start
+    
+    2.Define a class named Volume
+    
+    Inside the class, define two constructors:
+    
+    Constructor 1: Accepts three float parameters (l, b, h)
+    
+    Calculate volume of cuboid: vol = l × b × h
+    
+    Display the result
+    
+    Constructor 2: Accepts one float parameter (s)
+    
+    Calculate volume of cube: vol1 = s × s × s
+    
+    3.Display the result
+    
+    In the main() function:
+    
+    Create object v1 with three float values → invokes cuboid constructor
+    
+    4.Create object v2 with one float value → invokes cube constructor
+    
+    5.Each constructor executes automatically when its object is created, printing the respective volume
+    
+    6.End
+
+# Program 3
+Objective : to illustrate the use of function overloading in C++
+
+Steps
+
+    1.Start
+    
+    2.Define a class named Cars
+    
+    3.Inside the class, define two member functions:
+    
+    Car1(string Brand, string model)
+    
+    Accepts two string parameters
+    
+    Displays the brand and model
+    
+    Car2(int price)
+    
+    Accepts one integer parameter
+    
+    Displays the price
+    
+    4.In the main() function:
+    
+    Create an object c of class Cars
+    
+    Call Car1() using the object c with string arguments "VW" and "Virtus"
+    
+    Call Car2() using the object c with integer argument 1500000
+    
+    5.Each function executes and prints the respective output
+    
+    6.End
+
+# Program 4
+Objective : to illustrate the use of operator overloading in C++
+
+Steps
+
+    1.Start
+    
+    2.Define a class named Complex
+    
+    3.Declare two private integer variables:
+    
+    real to store the real part
+    
+    imag to store the imaginary part
+    
+    4.Define a constructor Complex(int r=0, int i=0)
+    
+    Initialize real with r
+    
+    Initialize imag with i
+    
+    5.Define an overloaded + operator function
+    
+    Accepts another Complex object as a parameter
+    
+    Creates a temporary Complex object res
+    
+    Adds the real parts: res.real = real + obj.real
+    
+    Adds the imaginary parts: res.imag = imag + obj.imag
+    
+    Returns the result object res
+    
+    6.Define a print() function
+    
+    Displays the complex number in the format real + iimag
+    
+    7.In the main() function:
+    
+    Create object c1 with values (10, 5)
+    
+    Create object c2 with values (2, 4)
+    
+    Add c1 and c2 using overloaded + operator → store result in c3
+    
+    Call c3.print() to display the result
+    
+    8.End
+
+# Program 5
+Objective : to illustrate the use of operator overloading in C++
+
+Steps 
+
+    1.Start
+    
+    2.Define a class named Box
+    
+    3.Declare three private data members:
+    
+    length (double)
+    
+    width (double)
+    
+    height (double)
+    
+    4.Define a constructor Box(double l = 0, double w = 0, double h = 0)
+    
+    Initialize length, width, and height with provided values or default to 0
+    
+    5.Define the overloaded + operator function
+    
+    Accepts another Box object as parameter
+    
+    Creates a new Box object result
+    
+    Adds corresponding dimensions: result.length = length + otherBox.length result.width = width + otherBox.width result.height = height + otherBox.height
+    
+    Returns result
+    
+    6.Define the overloaded - operator function
+    
+    Accepts another Box object as parameter
+    
+    Creates a new Box object result
+    
+    Subtracts corresponding dimensions: result.length = length - otherBox.length result.width = width - otherBox.width result.height = height - otherBox.height
+    
+    Returns result
+    
+    7.Define a display() function
+    
+    Prints the values of length, width, and height
+    
+    8.In the main() function:
+    
+    Create box1 with dimensions (5, 5, 2)
+    
+    Create box2 with dimensions (2, 4, 1)
+    
+    Display box1 and box2
+    
+    Create totalBox1 by adding box1 and box2 using overloaded + operator
+    
+    Create totalBox2 by subtracting box2 from box1 using overloaded - operator
+    
+    Display totalBox1 and totalBox2
+    
+    9.End
